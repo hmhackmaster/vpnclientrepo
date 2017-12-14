@@ -7,6 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="width=device-width,maximum-scale=2">
 	<meta name="description" content="Download VPN Clients for various enterprise VPN services">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/githubRepoWidget_mod.js" async></script>
 	<link rel="stylesheet" type="text/css" media="screen" href="assets/style.css">
 	<!-- Begin Jekyll SEO tag v2.3.0 -->
 	<title>VPN Client Download Repository</title>
@@ -49,7 +51,7 @@
 		</tr>
 		<tr>
 			<td class="menu">
-				<center><a href="#about"><b>About this site</b></a> | <a href="https://twitter.com/hmhackmaster"><b>Submit to the list </b></a></center>
+				<center><a href="#about"><b>About this site</b></a> | <b><a href="#VendorList">Quick list of all clients</a></b> | <a href="#SubmitNew"><b>Submit to the list</b></a></center>
 			</td>
 		</tr>
 		<tr>
@@ -130,6 +132,40 @@
 			</td>
 		</tr>
 	</table>
+
+	<!-- VendorList popup  -->
+	<div id="VendorList" class="overlay">
+		<div class="popup">
+			<h2>List of VPN Vendors</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<ul>
+					<li style="list-style-type:none">SonicWall
+						<ul>
+							<li><a href="#SonicWallGVC">Global VPN Client</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- VendorList popup  -->
+	<div id="SubmitNew" class="overlay">
+		<div class="popup">
+			<h2>Submit a VPN Client</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<p>We welcome all submitions of clients to this list. As many organizations are dependent on a specific version of a VPN client (that can sometimes be hard to track down pubically), we want to collect every version. </p>
+				<p>As this is a public website, please be sure that the binary you are submitting is not pre-configured for your organization. </p>
+				<p>To keep our user's trust, we will also need to validate that the binary is identical to the one shipped by the vendor. It is greatly appreciated if you have info that can help confirm this (such as the binary's hash on the vendor's web site).</p>
+				<p>To submit a new VPN Client for inclusion, please create an issue on the GitHub repo (link below!)</p> 
+				<div class="github-widget" data-repo="hmhackmaster/vpnclientrepo"></div>
+
+			</div>
+		</div>
+	</div>
+
 	<br>
 </body>
 
